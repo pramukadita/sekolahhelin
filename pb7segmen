@@ -1,0 +1,475 @@
+//buat lampu 7 segment menggunakan 7 kaki common anoda 
+//PB1 KLIK = +
+//PB2 KLK = -
+//PB3 KLIK = RESET
+int a=2;
+int b=3;
+int c=4;
+int d=5;
+int e=6;
+int f=7;
+int g=8;
+int pb=9;
+int pb2=10;
+int pb3=11;
+int a1=12;
+int b1=13;
+int c1=A4;
+int d1=A3;
+int e1=A2;
+int f1=A1;
+int g1=A0;
+int x;
+
+
+void setup() {
+
+  // put your setup code here, to run once
+  pinMode(pb,INPUT_PULLUP);
+   pinMode(pb2,INPUT_PULLUP);
+   pinMode(pb3,INPUT_PULLUP);
+  pinMode(a,OUTPUT);
+  pinMode(b,OUTPUT);
+    pinMode(c,OUTPUT);
+      pinMode(d,OUTPUT);
+        pinMode(e,OUTPUT);
+          pinMode(f,OUTPUT);
+            pinMode(g,OUTPUT);
+             pinMode(a1,OUTPUT);
+  pinMode(b1,OUTPUT);
+    pinMode(c1,OUTPUT);
+      pinMode(d1,OUTPUT);
+        pinMode(e1,OUTPUT);
+          pinMode(f1,OUTPUT);
+            pinMode(g1,OUTPUT);
+}
+
+void loop() { 
+  // put your main code here, to run repeatedly:
+if(digitalRead(pb)==0){
+  x++;
+  delay(200);
+}  
+if (digitalRead(pb2)==0){
+  x--;
+  delay(200);
+}
+if (digitalRead(pb3)==0){
+  x=0;
+  delay(200);
+}
+
+
+if(x == 20){  
+  x = 20;
+}
+
+
+
+if(x == 0){
+ nol();
+}
+if(x == 1){
+ satu();
+}
+if(x == 2){
+ dua();
+}
+if(x == 3){
+ tiga();
+}
+if(x == 4){
+ empat();
+}
+if(x == 5){
+ lima();
+}
+if(x == 6){
+ enam();
+}
+if(x == 7){
+ tujuh();
+}
+if(x == 8){
+ delapan();
+}
+if(x == 9){
+ sembilan();
+}
+if(x == 10){
+ sepuluh();
+}
+if(x == 11){
+ sebelas();
+}
+if(x == 12){
+ duabelas();
+}
+if(x == 13){
+ tigabelas();
+}
+if(x == 14){
+ empatbelas();
+}
+if(x == 15){
+ limabelas();
+}
+if(x == 16){
+ enambelas();
+}
+if(x == 17){
+ tujuhbelas();
+}
+
+if(x == 18){
+ delapanbelas();
+}
+if(x == 19){
+ sembilanbelas();
+}
+if(x == 20){
+ duapuluh();
+}
+}
+
+void nol(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,1);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void satu(){
+digitalWrite(a,1);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,1);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void dua(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,1);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,1);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void tiga(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void empat(){
+digitalWrite(a,1);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void lima(){
+digitalWrite(a,0);
+digitalWrite(b,1);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void enam(){
+digitalWrite(a,0);
+digitalWrite(b,1);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void tujuh(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,1);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void delapan(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+void sembilan(){
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,0);
+digitalWrite(g1,1);
+}
+
+
+
+void sepuluh(){
+  digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,1);
+}
+void sebelas(){
+digitalWrite(a,1);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,1);
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+}
+void duabelas(){
+
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,1);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,1);
+digitalWrite(g,0);
+
+}
+void tigabelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,0);
+}
+void empatbelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,1);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+}
+void limabelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,1);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+}
+void enambelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,1);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,0);
+}
+void tujuhbelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,1);
+digitalWrite(e,1);
+digitalWrite(f,1);
+digitalWrite(g,1);
+}
+void delapanbelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,0);
+}
+void sembilanbelas(){
+digitalWrite(a1,1);
+digitalWrite(b1,0);
+digitalWrite(c1,0);
+digitalWrite(d1,1);
+digitalWrite(e1,1);
+digitalWrite(f1,1);
+digitalWrite(g1,1);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,1);
+digitalWrite(f,0);
+digitalWrite(g,0);
+}
+void duapuluh(){
+digitalWrite(a1,0);
+digitalWrite(b1,0);
+digitalWrite(c1,1);
+digitalWrite(d1,0);
+digitalWrite(e1,0);
+digitalWrite(f1,1);
+digitalWrite(g1,0);
+digitalWrite(a,0);
+digitalWrite(b,0);
+digitalWrite(c,0);
+digitalWrite(d,0);
+digitalWrite(e,0);
+digitalWrite(f,0);
+digitalWrite(g,1);
+}
